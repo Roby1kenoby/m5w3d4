@@ -11,7 +11,7 @@ function CommentArea() {
     return ( 
         <div className="commentAreaWrapper">
             <AddComment setReviewAdded={setReviewAdded}></AddComment>
-            <CommentList reviewAdded={reviewAdded}></CommentList>
+            <CommentList reviewAdded={reviewAdded} setReviewAdded={setReviewAdded}></CommentList>
         </div>
     );
 }
