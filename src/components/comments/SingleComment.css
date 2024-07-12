@@ -1,0 +1,19 @@
+.mainWrapper{
+    border: 1px solid grey;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.rateWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnWrapper{
+    padding: 0;
+}
+
+.btnWrapper button:nth-child(1){
+    margin-right: 1em;
+}

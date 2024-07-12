@@ -1,12 +1,17 @@
+import './CommentArea.css'
 import AddComment from "./AddComment";
 import CommentList from "./CommentList";
+import { useState } from 'react';
 
 
 function CommentArea() {
+    // stato usato per refreshare la lista di review se addComment ha aggiunto un commento.
+    const [reviewAdded, setReviewAdded] = useState(false)
+
     return ( 
-        <div>
-            <AddComment></AddComment>
-            <CommentList></CommentList>
+        <div className="commentAreaWrapper">
+            <AddComment setReviewAdded={setReviewAdded}></AddComment>
+            <CommentList reviewAdded={reviewAdded}></CommentList>
         </div>
     );
 }
