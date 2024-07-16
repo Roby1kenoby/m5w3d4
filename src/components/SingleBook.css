@@ -56,9 +56,16 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 1em;
+    column-gap: 0.5em;
 }
 
 .btnWrapper button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnWrapper button:first-of-type{
     width: 100%;
 }
 

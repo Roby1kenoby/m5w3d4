@@ -1,0 +1,51 @@
+.container{
+    height: 100%;
+}
+.bookWrapper{
+    display: flex;
+    width: 100%;
+}
+
+.bookWrapper img{
+    width: 50% !important;
+}
+
+.detailsWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.otherDetails{
+    padding-left: 1em;
+}
+
+.otherDetails h4{
+    text-align: center;
+}
+
+.otherDetails p:first-of-type{
+    text-align: center;
+    color: grey;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#brief{
+    font-style: italic;
+    margin-bottom: 0.2em;
+}
+
+#price{
+    font-weight: bold;
+}
+
+.bdButtonWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bdButtonWrapper button{
+    width: 50%;
+    margin: 0 1em;
+}
