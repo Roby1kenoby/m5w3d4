@@ -1,15 +1,20 @@
 import './MyNav.css'
 import { Form, Button, Container, Navbar, Nav } from 'react-bootstrap';
 import { useState } from 'react';
-function MyNav({ selectedGenre, setSelectedGenre, searchInput, setSearchInput }) {
+function MyNav({ setSelectedGenre, searchInput, setSearchInput }) {
     
+    const handleGenreChange = (e) => {
+        setSelectedGenre(e.target.value)
+        setSearchInput('')
+    }
+
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
                 <Navbar.Brand href="#home">FunnyBooks</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Form.Select aria-label="Default select example">
+                    <Form.Select aria-label="Default select example" onChange={handleGenreChange}>
                         <option value="Fantasy">Fantasy</option>
                         <option value="History">History</option>
                         <option value="Horror">Horror</option>
