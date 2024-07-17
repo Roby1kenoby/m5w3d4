@@ -36,7 +36,9 @@ function SingleBook({ book }) {
                             </Button>
                             <Button
                                 as={Link}
-                                to={`/BooksDetails/${book.asin}`}
+                                // questa non funziona perchè l'on-click sulla card ha priorità rispetto alla navigazione.
+                                // cioè il to del button
+                                // to={`/BooksDetails/${book.asin}`}
                                 onClick={goToBookDetails}
                                 >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-info-square" viewBox="0 0 16 16">
