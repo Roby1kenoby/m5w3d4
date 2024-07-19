@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 
 function SingleComment({review}) {
     return ( 
-        <li key={review._id}>
+        <li key={review._id} data-testid="singleComment">
             <div className='mainWrapper'>
                 <div className='rateWrapper'>
                     <p>Rate: {review.rate}</p>

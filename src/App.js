@@ -4,7 +4,7 @@ import AllTheBooks from './components/AllTheBooks';
 import CommentArea from './components/comments/CommentArea';
 import MyFooter from './components/MyFooter';
 import MyNav from './components/MyNav';
-import Welocme from './components/Welcome';
+import Welcome from './components/Welcome';
 import { BookContextProvider } from './components/BookContextProvider';
 import { Row } from 'react-bootstrap';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -26,7 +26,7 @@ function App() {
             <Route
               path="/" element = {
                 <>
-                  <Welocme></Welocme>
+                  <Welcome></Welcome>
                   <Row className='contentWrapper'>
                     <div className='col-8'><AllTheBooks selectedGenre={selectedGenre} searchInput={searchInput}></AllTheBooks></div>
                     <div className='col-4'><CommentArea></CommentArea></div>

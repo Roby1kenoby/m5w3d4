@@ -17,7 +17,7 @@ function SingleBook({ book }) {
     
     return (
         <Col lg={4} md={6} sm={12} className='myCol' >
-            <Card className={book.asin === selectedBook && 'selected'}
+            <Card data-testid="singleBook" className={book.asin === selectedBook && 'selected'}
                 onClick={() => book.asin === selectedBook ? setSelectedBook(null) : setSelectedBook(book.asin)}
                 >
                 <div className='imgWrapper'>

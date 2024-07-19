@@ -2,7 +2,7 @@ import './Welcome.css'
 import { useState } from 'react';
 import { Alert } from 'react-bootstrap';
 
-function Welocme() {
+function Welcome() {
     const [show, setShow] = useState(true);
     return (
         <div>
@@ -14,4 +14,4 @@ function Welocme() {
     );
 }
 
-export default Welocme;
+export default Welcome;
